@@ -51,4 +51,35 @@ h3{
 
 }
 }
-    
+
+/* Links */
+a{
+    text-decoration: none;
+}
+
+.link-arrow{
+    color: var(--color-accent);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.link-arrow::after{
+    /* we can also add an icon here  */
+    content: "-->";
+    /* we use px here to keep the space no mater what is the size of the screen (it is a fixed margin) */
+    margin-left: 5px;
+    /* we add this transition to make the move more smooth */
+    transition: margin 0.15s;
+}
+
+.link-arrow:hover::after{
+  margin-left: 10px;
+
+}
+
+@media screen and (min-width:1024px) {
+
+    .link-arrow{
+        font-size: 1.5rem;
+    }
+}
