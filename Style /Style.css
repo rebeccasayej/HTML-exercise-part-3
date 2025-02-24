@@ -269,3 +269,25 @@ padding-left: 1.5rem 1rem;
 
     }
 }
+
+/* card */
+
+.card{
+    border-radius: 7px;
+    box-shadow: 0 0 20px 10px #f3f3f3;
+    /* to hide the overflow from the other div to make sure the rounded edges are visible */
+    overflow: hidden;
+}
+.card__header, .card__body{
+    padding: 2rem 3rem;
+}
+
+.card--primery .card__header{
+    background: var(--color-primary);
+    color:#fff;
+}
+
+.card--secondary .card__header{
+    background: var(--color-secondary);
+    color:#fff;
+}
