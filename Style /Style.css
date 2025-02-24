@@ -4,6 +4,9 @@
 --color-accent: #ff3400;
 --color-headings: #1b0760;
 --color-body: #918ca4;
+--color-borders:#ccc; 
+--border-radius:30px;
+
 }
 
 *,*::after, *::before{
@@ -234,18 +237,32 @@ font-size: 1.5rem;
 /* input */
 
 .input{
-  /* to delete the selected border in the input element  */
-  border-radius: 30px;
-  padding: 1.5rem 3.5rem;
-  border:1px solid #ccc; 
-  color:  var(--color-headings);
-  font-size: 2rem;
+    border-radius: var(--border-radius);
+    padding: 1.5rem 3.5rem;
+    border:1px solid var(--color-borders); 
+    color:  var(--color-headings);
+    font-size: 2rem;
+    /* to delete the selected border in the input element  */
   outline: 0;
 }
 ::placeholder{
     color : #cdcbd7;
 }
+.input-group {
+    border:1px solid var(--color-borders); 
+    border-radius: var(--border-radius);
+    display: flex;
+}
 
+.input-group .input{
+border:0;
+flex-grow: 1;
+padding-left: 1.5rem 1rem;
+}
+
+.input-group .btn{
+    margin: 4px;
+}
 @media screen and (min-width:1024px) {
     .input {
         font-size: 1.5rem;
