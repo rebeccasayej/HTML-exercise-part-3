@@ -230,3 +230,25 @@ font-size: 1.5rem;
 
     }
 }
+
+/* input */
+
+.input{
+  /* to delete the selected border in the input element  */
+  border-radius: 30px;
+  padding: 1.5rem 3.5rem;
+  border:1px solid #ccc; 
+  color:  var(--color-headings);
+  font-size: 2rem;
+  outline: 0;
+}
+::placeholder{
+    color : #cdcbd7;
+}
+
+@media screen and (min-width:1024px) {
+    .input {
+        font-size: 1.5rem;
+
+    }
+}
